@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product landing page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css">
+    
+</head>
+<body>
+    <header id="header">
+      <nav>
+        <div id="nav-bar">
+          <div id="logo">
+            <img src="images/logo.jpg" alt="tree logo" id="header-img">
+          </div>
+          <div id="links">
+        
+            <a href="#shop" class="nav-link">Shop</a>
+            <a href="#just-in" class="nav-link">New</a>
+            <a href="#explore-video" class="nav-link">Explore</a>
+            <a href="#subscribe" class="nav-link">Subscribe</a>
+          </div>
+  
+          <div class="mobile-btn">
+            <a id="menu-btn" onclick="myFunction()" class="fa fa-bars fa-2x"></a>
+          </div>
+  
+        </div>
+      </nav>
+    
+          <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <ul class="mobile-links">
+        <li class="nav-list"><a href="#">Home</a></li>
+        <li class="nav-list"><a href="#">Gallery</a></li>
+        <li class="nav-list"><a href="#">New</a></li>
+        <li class="nav-list"><a href="#">Portfolio</a></li>
+        <li class="nav-list"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+      </header>
+
+      <main>
+        <section id="shop" class="hero">
+       
+          <article>
+            <h1>Looking for modern furniture?</h1>
+            <p>Explore thousands of modern furniture with just one click and stirred by starlight across the centuries light years great turbulent clouds circumnavigated paroxysm of global enjoyment.</p>
+            <a href="#furniture">Browse Furniture</a>
+          </article>
+          </section>
+          <section id="just-in" >
+             <article>
+               <h3>Latest arrivals</h3>
+               <p>Explore thousands of modern furniture with just one click and stirred by starlight across the centuries light years great turbulent clouds circumnavigated paroxysm of global enjoyment.</p>
+             </article>
+             <div class="newest">
+            <div class="card">
+              <img src="images/chair.jpeg" alt="Green sofa" style="width:100%">
+              <h1>Ancient sofa</h1>
+              <p class="price">$19.99</p>
+              <p>Some text about the sofa..</p>
+              <p><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+              <img src="images/bluechairs.jpeg" alt="Green sofa" style="width:100%">
+              <h1>Ancient sofa</h1>
+              <p class="price">$19.99</p>
+              <p>Some text about the sofa..</p>
+              <p><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+              <img src="images/dining.jpeg" alt="Green sofa" style="width:100%">
+              <h1>Ancient sofa</h1>
+              <p class="price">$19.99</p>
+              <p>Some text about the sofa..</p>
+              <p><button>Add to Cart</button></p>
+            </div>
+            <div class="card">
+              <img src="images/blackchairs.jpeg" alt="Green sofa" style="width:100%">
+              <h1>Ancient sofa</h1>
+              <p class="price">$19.99</p>
+              <p>Some text about the sofa..</p>
+              <p><button>Add to Cart</button></p>
+            </div>
+          </div>
+         
+          </section>
+          <section id="subscribe">
+            <article>
+              <h3>JOIN OUR NEWSLETTER</h3>
+            
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repellendus ipsam incidunt odio sit vero impedit natus quo, odit consequatur. Id libero mollitia a facilis, quis nisi minima sequi officia architecto dolorum asperiores delectus, ullam nostrum nobis dolorem perspiciatis! Minima ullam dolor natus veritatis iure, commodi cumque nam ipsum officia dolorum error qui laboriosam expedita quo tenetur illum, explicabo magni at. Veritatis veniam exercitationem quo eligendi consequatur magnam nihil rerum natus est pariatur, inventore laudantium magni molestiae nesciunt minima sapiente sint molestias nostrum itaque illo sed asperiores? Odit inventore debitis illum itaque, sequi iusto expedita! Placeat natus corporis fuga reprehenderit!</p>
+            </article>
+            <div>
+              <form id="form" action=" https://www.freecodecamp.com/email-submit">
+               
+              
+                <div class="container" style="background-color:white">
+                  <input type="text" placeholder="Name" name="name" required>
+                  <input id="email" type="email" placeholder="Email address" name="mail" required>
+                 
+                </div>
+              
+                <div class="container">
+                  <input id="submit" type="submit" value="Subscribe">
+                </div>
+              </form>
+            </div>
+
+          </section>
+          <section id="explore-video">
+          
+            <div >
+              <iframe id="video" width="600" height="315"
+src="https://www.youtube.com/embed/VFPZrGofxF4">
+
+</iframe>
+            </div>
+            <article class="explore">
+           <!--  <img src="images.jpeg" alt="Bed" >-->
+           <h3>Best Furniture Manufacturer</h3>
+          <p>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.
+
+            Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+            <div class="explore-div">
+              <button id="explore-btn">Explore</button>
+            </div>
+            </article>
+           
+          </section>
+      </main>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("mobile-menu");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+      </script>
+   
+</body>
+</html>

@@ -1,0 +1,317 @@
+/* Typography imported from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+p, a {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Generic styles */
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+a:hover {
+  opacity: .6;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+header {
+  position: fixed;width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #f4f2f3;
+  padding-top: 5px;}
+
+#nav-bar {
+  display: grid;
+  min-height: 100px;
+  grid-auto-flow: column;
+ 
+  grid-gap: 1.5em;
+  padding: 0 40px;
+  -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  -moz-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+}
+
+#logo {
+  display: grid;
+ 
+  align-items: center;
+  margin-left: 0rem;
+ 
+  
+}
+
+
+
+#links {
+  display: grid;
+  justify-content: right;
+  align-content: center;
+  grid-auto-flow: column;
+  grid-gap: 1.5em;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+#header-img{
+    height: 55px;
+    width: 55px;
+
+}
+
+  
+  .nav-link {
+    text-decoration: inherit;
+    color: inherit;
+    margin: 5px;
+  }
+
+  .hero {
+    /* Photo by mnm.all on Unsplash */
+    background: url('images/hero.jpg') center;
+    background-size: cover;
+    padding: 4rem 2rem;
+    height: 700px;
+    /* Grid styles */
+    display: grid;
+   
+   
+   
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+
+  }
+
+  .hero > * {
+    color: #fff;
+    text-align: center;
+  }
+
+  .hero > article{
+   align-self: center;
+  }
+  
+  .hero > article > h1 {
+    font-size: 4rem;
+    margin-bottom: 0rem;
+    
+  }
+  
+  .hero > article > p {
+    font-size: 1.5rem;
+    font-weight: 200;
+   
+  }
+  
+  .hero > article > a {
+    padding: 1rem;
+    margin-top: .75rem;
+    background-color: goldenrod;
+  text-decoration: none;
+  color: white;
+  border-radius: .25rem;
+ 
+  display: inline-block;
+  transition: all .3s;
+  }
+  #just-in > article{
+    display: grid;
+    grid-template-rows: repeat(auto-fit,  minmax(100px, 1fr));
+    justify-content: center;
+  }
+
+  #just-in > article > h3{
+  text-align: center;
+   
+    font-size: 2rem;
+  }
+
+  #just-in > article > p{
+   text-align: center;
+    font-weight: 200;
+     font-size: 1.5rem;
+   }
+
+  .newest{
+    
+    display: grid;
+   margin-top: 2rem;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit,  minmax(240px, 1fr));
+    grid-auto-rows: minmax(240px, 1fr);
+    grid-gap: 5px;
+    
+  }
+
+ 
+  .newest > div > img{
+    width: 220px;
+    height: 220px;
+  }
+  .newest > div {
+   display: grid;
+  
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+  #subscribe{
+    background-color: #f4f2f3;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,  minmax(200px, 1fr));
+    padding-top: 1rem;
+    
+  }
+  #subscribe > article {
+    justify-self: center;
+  }
+
+  #subscribe > article > h3{
+   text-align: center;
+  }
+
+  #subscribe > article > p{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+   }
+  #subscribe > div{
+    display: grid;
+    
+  }
+  #subscribe > div > #form{
+    display: grid;
+  
+    justify-self: center;
+  }
+
+  /* form */
+  #form {
+    border: 4px solid #f1f1f1;
+  }
+  
+  /* Add some padding and a grey background color to containers */
+  .container {
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the input elements and the submit button */
+  input[type=text], input[type=email], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+ 
+  
+  /* Style the submit button */
+  input[type=submit] {
+  background-color: goldenrod;
+    color: white;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+#explore-video{
+  margin-top: 2rem;
+  display: flex;
+  background-color: #fff;
+  
+}
+#explore-video > .explore  {
+
+  padding: 1rem;
+}
+
+
+#explore-video > .explore > h3{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2rem;
+  
+}
+
+#explore-video > .explore > p{
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.5rem;
+  
+}
+
+#explore-video > .explore > .explore-div{
+  text-align: center;
+  
+  
+}
+
+ #explore-btn {
+  background-color: goldenrod;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  width: 40%;
+  margin: 4px 2px;
+  cursor: pointer;
+ 
+}
